@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kiosk</title>
+  </head>
+  <body>
+    <button
+      style="position: fixed; right: 0; top: 50%; transform: translateY(-50%)"
+      id="close-kiosk-window"
+    >
+      Close kiosk window
+    </button>
+  </body>
+  <script>
+    const button = document.getElementById('close-kiosk-window')
+    button.addEventListener('click', () => {
+      window.api.send('close-kiosk-window')
+    })
+  </script>
+</html>

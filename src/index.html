@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>💖 Hello World!</h1>
+    <p>Welcome to your Electron application.</p>
+    <button id="open-kiosk-window">Open kiosk window</button>
+  </body>
+  <script>
+    const button = document.getElementById('open-kiosk-window')
+    button.addEventListener('click', () => {
+      window.api.send('open-kiosk-window')
+    })
+  </script>
+</html>
