@@ -42,6 +42,8 @@ const createWindow = () => {
 
     kioskWindow.loadFile(path.join(__dirname, 'kiosk.html'))
     kioskWindow.setKiosk(true)
+    kioskWindow.setFullScreen(true)
+    kioskWindow.setAlwaysOnTop(true)
 
     // Create the BrowserView and attach it to the kiosk window
     kioskView = new BrowserView()
